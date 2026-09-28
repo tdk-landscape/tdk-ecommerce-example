@@ -1,0 +1,144 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, sans-serif;
+  --accent: #42b883;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0.25rem 0 0;
+  font-size: 2.25rem;
+}
+
+h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.muted {
+  opacity: 0.7;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 52rem) {
+  .layout {
+    grid-template-columns: 1fr 17rem;
+    align-items: start;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card,
+.cart {
+  padding: 1rem;
+  border: 1px solid #8884;
+  border-radius: 0.75rem;
+}
+
+.cart ul {
+  padding: 0;
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+input {
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  border: 1px solid #8884;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: inherit;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font: inherit;
+  color: #fff;
+  background: var(--accent);
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+button.ghost {
+  padding: 0.1rem 0.6rem;
+  color: inherit;
+  background: transparent;
+  opacity: 0.6;
+}
+
+button.wide {
+  width: 100%;
+}
+
+.badge {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.error {
+  color: #d33;
+}
+
+.receipt {
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: #42b88322;
+}

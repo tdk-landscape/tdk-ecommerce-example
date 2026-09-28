@@ -1,0 +1,15 @@
+{
+    "appName": "storefront-web",
+    "appType": "frontend",
+    "framework": "vue",
+    "stack": "store",
+    "port": 3300,
+    "basePath": "/storefront-web",
+    "dependsOn": [
+        "catalog-api"
+    ],
+    "healthCheck": {
+        "enabled": true,
+        "path": "/"
+    }
+}

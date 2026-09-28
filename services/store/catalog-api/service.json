@@ -1,0 +1,11 @@
+{
+    "appName": "catalog-api",
+    "appType": "backend",
+    "stack": "store",
+    "port": 4300,
+    "dependsOn": [],
+    "healthCheck": {
+        "enabled": true,
+        "path": "/health"
+    }
+}
