@@ -12,8 +12,10 @@ export interface Order {
   lines: Array<{ productId: string; quantity: number; name: string; unitPriceCents: number }>;
 }
 
-// catalog-api publishes this fixed port (see services/store/catalog-api/service.json).
-export const CATALOG_API_URL = import.meta.env.VITE_CATALOG_API_URL ?? 'http://localhost:4300';
+// TDK does not publish backend ports on localhost; Traefik routes catalog-api at
+// api.<project>.localhost/api/<name without -api>, with that prefix stripped.
+export const CATALOG_API_URL =
+  import.meta.env.VITE_CATALOG_API_URL ?? 'http://api.tdk-ecommerce-example.localhost/api/catalog';
 
 type Fetch = typeof fetch;
 

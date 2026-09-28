@@ -18,10 +18,10 @@ tdk up store
 
 | Resource | Type | Stack | Port | URL |
 | --- | --- | --- | ---: | --- |
-| [`catalog-api`](services/store/catalog-api) | Hono API | `store` | 4300 | http://localhost:4300/api/products |
+| [`catalog-api`](services/store/catalog-api) | Hono API | `store` | 4300 | http://api.tdk-ecommerce-example.localhost/api/catalog/api/products |
 | [`storefront-web`](services/store/storefront-web) | Vue 3 app | `store` | 3300 | http://app.tdk-ecommerce-example.localhost/storefront-web |
 
-`tdk networks` lists the `*.localhost` routes; `tdk down` stops everything.
+Both go through Traefik; TDK does not publish the container ports on `localhost`. `tdk networks` lists the `*.localhost` routes; `tdk down` stops everything.
 
 ## How it was made
 
