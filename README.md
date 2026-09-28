@@ -6,6 +6,16 @@ A small, complete [TDK](https://github.com/tdk-landscape/tdk-cli-core) project: 
 
 > **Requires TDK CLI 1.3.75 or newer** ([tdk-cli-core#149](https://github.com/tdk-landscape/tdk-cli-core/pull/149) added Vue support). Older releases ignore `"framework": "vue"` and would generate React config for these files. Check with `tdk resource --help | grep -- --framework`.
 
+## What it looks like
+
+| Product grid and cart | Order placed |
+| --- | --- |
+| ![Coffee Shop with three items in the cart](docs/screenshots/02-cart.png) | ![Order confirmation after checkout](docs/screenshots/03-order-placed.png) |
+
+Sold-out items (Brew Scale) can't be added, and checkout empties the cart. On a phone the cart moves below the product list:
+
+<img src="docs/screenshots/04-mobile.png" alt="Coffee Shop on a 390 px wide phone" width="260">
+
 ## Run it
 
 Prerequisites: Docker running, [Tilt](https://docs.tilt.dev/install.html), [Bun](https://bun.sh/docs/installation) and the [TDK CLI](https://github.com/tdk-landscape/tdk-cli-core#installation).
