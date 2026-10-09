@@ -1,11 +1,9 @@
 {
-    "appName": "catalog-api",
-    "appType": "backend",
-    "stack": "store",
-    "port": 4300,
-    "dependsOn": [],
-    "healthCheck": {
-        "enabled": true,
-        "path": "/health"
-    }
+  "appName": "catalog-api",
+  "appType": "backend",
+  "stack": "store",
+  "port": 4300,
+  "dependsOn": [],
+  "healthCheckPath": "/health",
+  "schemaVersion": 1
 }
